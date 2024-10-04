@@ -12,7 +12,8 @@
 
 
 .container {
-    background-color: EAECF0;
+    
+    background-color: #EAECF0;
     max-width: 1920px;
     padding: 0 160px;
     margin: 0 auto;
@@ -40,6 +41,9 @@
     flex-grow: 1 ;
 }
 
+.site-main{
+    max-width: 1920px;
+}
 .preview-product{
      font-weight: 600;
      padding: 100px 0;   
@@ -68,6 +72,7 @@
 }
 
 .site-footer{
+    max-width: 1920px;
     background-color: rgb(255, 255, 255);
     padding: 140px 160px;
     display: flex;
