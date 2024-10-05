@@ -59,16 +59,22 @@
 } 
  
 .button1{
+display: flex;
+justify-content: flex-start;
     background-color: whitesmoke;
 }
 .button1, .button3{
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
 }
 
 
 .photos{
+    padding: 0 160px;
+    /* margin: 0 auto; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .site-footer{
