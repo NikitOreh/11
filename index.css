@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.body {
+    font-family: "Inter", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+.main{
+    flex-grow: 1;
+}
+.container {
+    margin: 0 auto;
+    width: 1600px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.logo p{
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #354153;
+}
+
+.var{
+    background-color: #ffffff;
+    display: inline-block;
+    border: 0px solid #ffffff;
+    border-radius: 8px;
+}
+.selectors {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-var{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1 ;
+}
+
+.preview-product{
+    font-weight: 600;  
+    padding: 24px 0 0 0;
+}
+
+.container1{
+    padding: 0px 160px;
+}
+
+.menu{
+    margin: 0 auto;
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+} 
+ 
+.button1{
+    /* padding: 8px 16px; */
+    background-color: #ffffff;
+    display: inline-block;
+    border: 1px solid #eaecf0;
+    border-radius: 8px;
+}
+
+.selected {
+    background-color: #f9fafb;
+    padding: 8px 16px;
+    border-radius: 8px 0 0 8px;
+    border: 0px;
+}
+
+.selected1 {
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.photos{
+    margin: 0 auto;
+    width: 1600px;
+    margin-top: 24px;
+    display: flex;
+    gap: 32px;
+}
+
+.photo{
+    border: 1px solid #eaecf0;
+    border-radius: 16px;
+}
+
+.photo img{
+    border-radius: 16px 16px 0 0;
+}
+
+.photo-body{
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: #0d1421;
+}
+
+.tel {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #354153;
+}
+
+.footer{
+    margin: 0 auto;
+    width: 1600px;
+}
+
+.ff{
+    position: fixed; 
+    bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #667085;
+}

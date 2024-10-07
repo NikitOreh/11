@@ -8,12 +8,14 @@
     <link rel="icon" href="img/Logo (1).svg">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-var">
-                <img src="img/Logo (1).svg" width="10%">
-                <h1 class="var">Вариант 7</h1>
-            </div>
+    <header>
+        <div class="container header-content">
+            <nav class="header-var">
+                <div class="logo">
+                    <img src="img/Logo (1).svg" alt="logo" />
+                    <p>Вариант 7</p>
+                </div>
+            </nav>
             <div class="var">
                 <button class="var"> <img src="img/Button.svg"></button>
             </div>
@@ -25,39 +27,46 @@
                 <div class="menu">
                 
                     <div class="button1">
-                        <button>Все контакты</button>
-                        <button>Избранные</button>
-                        
+                        <button class="selected">Все контакты</button>
+                        <button class="selected1">Избранное</button>
                     </div>
-                    <div class="button3"></div>
-                        <button>По умолчанию</button>
-                    </div>
+                    <select name="" id="" class="time__selector"  style="padding: 10px;">
+                        <option value="value1">
+                            По умолчанию
+                        </option>
+                        <option value="value2">
+                            По фамилии
+                        </option>
+                        <option value="value3">
+                            <p>По имени</p>
+                        </option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="photos">
-            <div class="photo1">
+            <div class="photo">
                 <img src="img/Ф1.jpg" class="photo1-img">
-                <div class="photo1-body">
+                <div class="photo-body">
                     <h3 class="photo1-body">Антон Котиков</h3>
                     <div class="photo1-text">+7 920 472 32-23</div>
                 </div>
             </div>
-            <div class="photo2">
+            <div class="photo">
                 <img src="img/Ф2.jpg" class="photo2-img">
-                <div class="photo2-body">
+                <div class="photo-body">
                     <h3 class="photo2-body">Диана Фролова</h3>
                     <div class="photo2-text">+7 920 472 32-23</div>
                 </div>
             </div>
-            <div class="photo3">
+            <div class="photo">
                 <img src="img/Ф3.jpg" class="photo3-img">
-                <div class="photo3-body">
+                <div class="photo-body">
                     <h3 class="photo3-body">Анастасия Лебедева</h3>
                     <div class="photo3-text">+8 920 472 32-23</div>
                 </div>
             </div>
-            <div class="photo4">
+            <div class="photo">
                 <img src="img/Ф4.jpg" class="photo4-img">
                 <div class="photo4-body">
                     <h3 class="photo4-body">Алина Давыдова</h3>
@@ -66,9 +75,9 @@
             </div>
         </div>
     </main>
-    <footer class="site-footer">
+    <footer>
         <div class="footer">
-            <div>© Вариант 7. Островский Константин, группа ИСПРВ-17-1</div>
+            <div class="ff">© Вариант 7. Островский Константин, группа ИСПРВ-17-1</div>
         </div>
     </footer>
 </body>
