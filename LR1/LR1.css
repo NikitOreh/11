@@ -1,6 +1,1 @@
-td {
-    border: 1px solid #000000;
-}
-th{
-    border: 1px solid #000000;
-}
+table, th, td, tr { border: 1px solid black; }
