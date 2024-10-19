@@ -93,8 +93,14 @@ main{
 .selected {
     background-color: #f9fafb;
     padding: 8px 16px;
-    border-radius: 8px 0 0 8px;
-    border: 0px;
+    border-radius: 8px;
+    /* border: 0px; */
+}
+
+.time__selector{
+    border-radius: 8px;
+    border: 1px solid #eaecf0;
+    padding: 10px;
 }
 
 .selected1 {
