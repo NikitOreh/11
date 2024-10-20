@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+    main{
+        margin: 0 auto;
+        width: 1600px;
+    }
+    
+    .container {
+        margin: 0 auto;
+        width: 1600px;
+    }
+
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        padding: 20px 0;
+        align-items: center;
+    }
+    .var{
+        background-color: #ffffff;
+        display: inline-block;
+        border: 0px solid #ffffff;
+        border-radius: 8px;
+    }
+    
+    .logo p{
+        margin-left: 24px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.33333;
+        color: #354153;
+    }
+    .menu{
+        margin: 0 auto;
+        width: 1600px;
+        display: flex;
+        justify-content: space-between;
+    } 
+    .black{
+        color: white;
+        display: inline-block;
+    } 
+    .b1{
+        color: white;
+        background-color: #000000;
+        padding: 8px 16px;
+        border-radius: 8px;
+        /* border: 0px; */
+    }
+    .b2{
+        color: white;
+        background-color: #000000;
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+    .b3{
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border-color: #EAECF0;
+    }
+    .time__selector{
+        border-radius: 8px;
+        border: 1px solid #eaecf0;
+        padding: 10px;
+    }
+
+    footer{
+        margin: 0 auto;
+        width: 1600px;
+    }
+
+    .ff{
+        position: fixed; 
+        bottom: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #667085;
+    }
