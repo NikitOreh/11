@@ -81,6 +81,25 @@ body {
         border: 1px solid #eaecf0;
         padding: 10px;
     }
+    .k1, .k2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .text1, .text2, .text3, .text4{
+        width: 784px;
+        height: 184px;
+    }
+    .k1{
+        padding-top: 24px;
+    }
+    .time{
+        padding-bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .text-head{
+        padding-bottom: 8px;
+    }
 
     footer{
         margin: 0 auto;
