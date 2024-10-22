@@ -56,18 +56,21 @@ body {
         color: white;
         display: inline-block;
     } 
-    .b1{
+    .b1, .b2{
         color: white;
         background-color: #000000;
         padding: 8px 16px;
         border-radius: 8px;
         /* border: 0px; */
     }
-    .b2{
-        color: white;
-        background-color: #000000;
-        padding: 8px 16px;
-        border-radius: 8px;
+    .econ{
+            color: rgb(0, 0, 0);
+            background-color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            /* border: 1px; */
+            border-color: #EAECF0;
+            /* border: 0px; */
     }
     .b3{
         color: rgb(0, 0, 0);
