@@ -4,69 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Burgers.css">
 </head>
 <body>
-    <head>
+    <header>
         <div class="header-content">
-            <div class="logo">
-                <img src="imd_LR4/Rectangle 3.svg" alt="">
-                <p>VF</p>
-                <p>Vintage Food</p>
-            </div>
-            <div class="logo-buttons">
-                <button class="lb-1">Главная</button>
-                <button class="lb-2">Акции</button>
-                <button class="lb-3">О нас</button>
-                <img src="imd_LR4/Кнопка _Корзина_.svg" alt="">
-            </div>
-            <div class="header-text">
-                <h2>
-                    Быстрая доставка для Вас
-                </h2>
-                <p>
-                    Сделай первый заказ и получи скидку 50%
-                </p>
-                <button class="buy">Заказать</button>
+            <div class="header-container">
+                <div class="head1">
+                    <div class="logo">
+                        <img src="imd_LR4/icon.svg" alt="">
+                        <P>Vintage Food</P>
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a href="#!" class="main">Главная</a></li>
+                            <li class="nav__list-item"><a href="#!" class="stock">Акции</a></li>
+                            <li class="nav__list-item"><a href="#!" class="about">О нас</a></li>
+                          </ul>
+                    </nav>
+                    <div class="cart">
+                        <img src="imd_LR4/Кнопка _Корзина_.svg" alt="">
+                    </div>
+                </div>
+                <div class="header-text">
+                    <div class="header-text-d">
+                        <h2 class="h-t-h2">
+                            Быстрая доставка для Вас
+                        </h2>
+                        <p class="h-t-p">
+                            Сделай первый заказ и получи скидку 50%
+                        </p>
+                        <button class="buy">Заказать</button>
+                    </div>
+                    <div class="header-text-img">
+                        <img src="imd_LR4/Фото _Бургер_.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </head>
+    </header>
 
-    <main>
-        <h1 class="menu">
+    <main class="main-container">
+        <h1 class="menu1">
             Меню
         </h1>
-        <div class="menu-img1">
-            <img src="imd_LR4/Картинка _Бургеры_.svg" alt="">
-            <img src="imd_LR4/Картинка _Блюда из курицы_.svg" alt="">
-            <img src="imd_LR4/Картинка _Горячие блюда_.svg" alt="">
-        </div>
-        <div class="menu-text1">
-            <p>
-                Бургеры
-            </p>
-            <p>
-                Блюда из курицы
-            </p>
-            <p>
-                Горячие блюда
-            </p>
-        </div>
-        <div class="menu-img1">
-            <img src="imd_LR4/Картинка _Закуски_.svg" alt="">
-            <img src="imd_LR4/Картинка _Салаты_.svg" alt="">
-            <img src="imd_LR4/Картинка _Десерты_.svg" alt="">
-        </div>
-        <div class="menu-text2">
-            <p>
-                Закуски
-            </p>
-            <p>
-                Салаты
-            </p>
-            <p>
-                Десерты
-            </p>
-        </div>
+        <section class="menu">
+            <a href="#!">
+              <article class="menu__item">
+                <img src="imd_LR4/Картинка _Бургеры_.svg" alt="">
+                <h3 class="menu__item-name">Бургеры</h3>
+              </article>
+            </a>
+            <a href="#!">
+              <article class="menu__item">
+                <img src="imd_LR4/Картинка _Блюда из курицы_.svg" alt="">
+                <h3 class="menu__item-name">Блюда из курицы</h3>
+              </article>
+            </a>
+            <a href="#!">
+              <article class="menu__item">
+                <img src="imd_LR4/Картинка _Горячие блюда_.svg" alt="">
+                <h3 class="menu__item-name">Горячие блюда</h3>
+              </article>
+            </a>
+            <a href="#!">
+              <article class="menu__item">
+                <img src="imd_LR4/Картинка _Закуски_.svg" alt="">
+                <h3 class="menu__item-name">Закуски</h3>
+              </article>
+            </a>
+            <a href="#!">
+              <article class="menu__item">
+                <img src="imd_LR4/Картинка _Салаты_.svg" alt="">
+                <h3 class="menu__item-name">Салаты</h3>
+              </article>
+            </a>
+            <a href="#!">
+              <article class="menu__item">
+                <img src="imd_LR4/Картинка _Десерты_.svg" alt="">
+                <h3 class="menu__item-name">Десерты</h3>
+              </article>
+            </a>
+          </section>
     </main>
     <footer>
         <div class="footer-text1">

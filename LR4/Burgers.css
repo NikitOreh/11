@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    }
+
+header {
+    background: linear-gradient(180deg, #eda418 47.4%, rgba(237, 164, 24, 0) 100%);
+}
+.header-container{
+    width: 1250px;
+    height: 900px;
+    margin: 0 auto;
+}
+/* main{
+    padding-top: 105px;
+        padding-left: 130px;
+} */
+.header-content{
+    display: flex;
+    flex-direction: column;
+}
+.head1{
+    display: flex;
+    align-items: flex-start;
+}
+
+.cart {
+    padding-top: 101px;
+}
+.logo{
+    padding-top: 105px;
+    padding-right: 255px;
+    display: flex;
+    white-space: nowrap; 
+}
+
+.logo p {
+    padding-top: 8px;
+    font-weight: 900;
+    font-size: 25px;
+    color: #000;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 117px;
+}
+.nav__list {
+    display: flex;
+}
+
+.nav__list-item a {
+    color: #000;
+}
+
+.main {
+    padding-right: 110px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000;
+}
+
+.stock {
+    padding-right: 97px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+}
+
+.about {
+    padding-right: 124px;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+}
+
+.header-text {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text-d{
+    padding-top: 173px;
+}
+
+.h-t-h2{
+    font-weight: 800;
+    font-size: 32px;
+    color: #000;
+}
+
+.h-t-p{
+    padding-top: 66px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 48px;
+}
+
+.buy {
+    border-radius: 50px;
+    width: 142px;
+    height: 60px;
+    background-color: #e52626;
+    color: #fff;
+    font-size: 24px;
+}
+
+.main-container {
+    width: 1430px;
+    height: 900px;
+    margin: 0 auto;
+}
+
+.menu1 {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 103px 38px;
+}
+
+.menu__item {
+    text-align: center;
+}
+
+.menu__item-name {
+    padding-top: 14px;
+
+    font-weight: 500;
+    font-size: 35px;
+    color: #000;
+}
