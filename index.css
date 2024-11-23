@@ -1,163 +1,181 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
+    background-color: #ffffff;
     font-family: "Inter", sans-serif;
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    }
+    min-height: 100dvh;
+    margin: 0;
+}
 
-main{
+main {
     flex-grow: 1;
 }
+
 .container {
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1200px; 
+    width: 100%; 
+    padding: 0 16px; 
 }
 
-.header-content{
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; 
 }
 
 .logo {
     display: flex;
-    padding: 20px 0;
     align-items: center;
+    padding: 20px 0;
 }
 
-.logo p{
-    margin-left: 24px;
+.logo p {
+    margin-left: 12px;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.33333;
+    font-size: 1.5rem;
     color: #354153;
 }
 
-.var{
+.var {
     background-color: #ffffff;
-    display: inline-block;
-    border: 0px solid #ffffff;
+    border: none;
     border-radius: 8px;
 }
-.selectors {
-    margin-top: 40px;
+
+.menu {
     display: flex;
     justify-content: space-between;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.header-var{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-grow: 1 ;
-}
-
-.preview-product{
-    font-weight: 600;  
-    padding: 24px 0 0 0;
-}
-
-.container1{
-    padding: 0px 160px;
-}
-
-.menu{
-    margin: 0 auto;
-    width: 1600px;
-    display: flex;
-    justify-content: space-between;
-} 
- 
-.button1{
-    /* padding: 8px 16px; */
-    background-color: #ffffff;
-    display: inline-block;
-    border: 1px solid #eaecf0;
-    border-radius: 8px;
-}
-
-.selected {
-    background-color: #f9fafb;
-    padding: 8px 16px;
-    border-radius: 8px;
-    /* border: 0px; */
-}
-
-.time__selector{
-    border-radius: 8px;
-    border: 1px solid #eaecf0;
-    padding: 10px;
-}
-
-.selected1 {
-    background-color: #ffffff;
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: 0px;
-}
-
-.photos{
-    margin: 0 auto;
-    width: 1600px;
+    flex-wrap: wrap;
+    gap: 16px; 
     margin-top: 24px;
-    display: flex;
-    gap: 32px;
 }
 
-.photo{
+.button1 {
+    display: flex;
+    gap: 8px; 
+    background-color: transparent;
+    border: none;
+}
+
+.selected,
+.selected1 {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.time__selector {
+    border-radius: 8px;
+    border: 1px solid #eaecf0;
+    padding: 8px;
+    font-size: 0.875rem;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 16px; 
+    margin-top: 24px;
+}
+
+.photo {
     border: 1px solid #eaecf0;
     border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
 }
 
-.photo img{
-    border-radius: 16px 16px 0 0;
+.photo img {
+    width: 100%;
+    height: auto; 
+    display: block;
 }
 
-.photo-body{
-    padding: 16px 24px;
+.photo-body {
+    background-color: #EAECF0;
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 8px;
+    text-align: start;
 }
 
 .name {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 133%;
+    font-size: 1.125rem;
+    line-height: 1.5;
     color: #0d1421;
 }
 
 .tel {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
+    font-size: 0.875rem;
+    line-height: 1.5;
     color: #354153;
 }
 
-.footer{
-    margin: 0 auto;
-    width: 1600px;
+.footer {
+    text-align: start;
+    padding: 16px 0;
+    font-size: 0.875rem;
+    color: #667085;
 }
 
-.ff{
-    position: fixed; 
-    bottom: 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #667085;
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo p {
+        font-size: 1.25rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button1 {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo p {
+        font-size: 1rem;
+    }
+
+    .selected,
+    .selected1,
+    .time__selector {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    .photo-body {
+        padding: 12px;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .tel {
+        font-size: 0.75rem;
+    }
 }
