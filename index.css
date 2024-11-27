@@ -6,6 +6,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 body {
     background-color: #ffffff;
     font-family: "Inter", sans-serif;
@@ -17,8 +48,9 @@ body {
 }
 
 main {
+    margin: 0 38px;
     flex-grow: 1;
-    padding: 0 90px; 
+    padding: 0 16px; 
 
 }
 
@@ -29,17 +61,11 @@ main {
     padding: 0 16px; 
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
-}
-
 .logo {
     display: flex;
-    align-items: center;
-    padding: 20px 0;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
 }
 
 .logo p {
@@ -47,15 +73,32 @@ main {
     font-weight: 600;
     font-size: 1.5rem;
     color: #354153;
+    flex-grow: 1; 
+}
+
+.btn {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0; 
+    margin-left: auto; 
+    display: flex;
+    align-items: center; 
+}
+
+
+.logo img {
+    animation: rotate 1.5s linear 1;
 }
 
 .var {
-
     background-color: #ffffff;
     border: none;
     border-radius: 8px;
 }
+
 .menu {
+    animation: slideInFromTop 1.5s ease-out forwards;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -98,6 +141,7 @@ main {
 }
 
 .photos {
+    animation: slideInFromBottom 1.5s ease-out forwards;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 16px; 
@@ -141,43 +185,136 @@ main {
 }
 
 .footer {
+    animation: slideInFromBottom 1.5s ease-out 0.5s forwards;
+    margin: 0 38px;
     text-align: start;
-    padding: 0 90px; 
+    padding: 0 16px; 
     font-size: 0.875rem;
     color: #667085;
+}
+.burger-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 30px 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    margin: 0 50px;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+}
+
+.burger-icon::before {
+    top: -8px;
+}
+
+.burger-icon::after {
+    top: 8px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 60px; 
+    right: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    display: flex; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: auto;
+    height: 40px; 
+}
+
+.var-btn {
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none !important;
+    }
+
+    .var {
+        display: block; 
+    }
+
+    .logo img {
+        display: inline-block; 
+    }
 }
 
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .logo p {
         font-size: 1.25rem;
     }
 
-    .menu {
-        flex-direction: column;
-        align-items: stretch;
+    .btn {
+        display: none;
+    }
+    .button1,
+    .var {
+        display: none;
     }
 
-    .button1 {
-        justify-content: space-around;
-        flex-wrap: wrap;
+    .burger-menu-btn {
+        display: block; 
+    }
+    .time__selector, {
+        display: none !important; 
     }
 }
 
 @media (max-width: 480px) {
-    .logo p {
-        font-size: 1rem;
-    }
+    
 
     .selected,
-    .selected1,
-    .time__selector {
+    .selected1 {
         font-size: 0.75rem;
         padding: 6px 12px;
+    }
+    .time__selector, {
+        display: none !important; 
     }
 
     .photo-body {
