@@ -1,19 +1,11 @@
-/* File: style/index.css */
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header */
 .header {
+    width: auto;
     position: relative;
     height: 100vh;
     background: url('../img/header-bg.svg') no-repeat center center/cover;
@@ -21,9 +13,25 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding-bottom: 30rem;
 }
+
+.header-logo {
+    max-width: 100%;
+}
+.name-company {
+    padding: 23px;
+}
+
+.header-text-1{ 
+    margin-top: 12rem;
+}
+
+.header-text-2 {
+    margin-top: 16rem;
+}
+
 .header h1 {
     font-size: 3rem;
     margin: 0.5rem 0;
@@ -41,7 +49,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Navigation */
 .navbar {
     top: 0;
     width: 100%;
@@ -51,7 +58,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 .navbar .logo img {
     height: 40px;
@@ -72,7 +79,7 @@ body {
     color: #007bff;
 }
 
-/* Our Story Section */
+
 .story {
     padding: 3rem 2rem;
     text-align: center;
@@ -124,7 +131,6 @@ body {
     color: #333;
 }
 
-/* Services Section */
 .services {
     padding: 3rem 2rem;
     text-align: center;
@@ -181,7 +187,6 @@ body {
     color: #555;
 }
 
-/* Contact Section */
 .contact {
     height: 499px;
     position: relative;
@@ -209,7 +214,6 @@ body {
     background: #0056b3;
 }
 
-/* Footer */
 .footer {
     padding: 3rem 2rem;
     background: #333;
