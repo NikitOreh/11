@@ -73,6 +73,13 @@ main {
     margin-bottom: 41px;
 }
 
+.gif {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    z-index: 1000000;
+}
 .main__description {
     display: flex;
     column-gap: 65px;

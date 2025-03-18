@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Загрузчик
     const preloader = document.getElementById("preloader");
     setTimeout(() => {
         preloader.style.display = "none";
     }, 3000);
 
-    // 2. Переключение мобильного меню
     const burgerMenuBtn = document.querySelector(".burger-menu-btn");
     const mobileMenu = document.querySelector(".mobile-menu");
 
@@ -13,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileMenu.classList.toggle("active");
     });
 
-    // 3. Данные для карточек
     const contactsData = [
         {
             name: "Антон Котиков",
@@ -43,9 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const contactList = document.getElementById("contactList");
 
-    // 4. Отображение карточек
     function displayContacts(contacts) {
-        contactList.innerHTML = ""; // Очистка контейнера
+        contactList.innerHTML = ""; 
         contacts.forEach((contact) => {
             const card = document.createElement("div");
             card.className = "photo";
@@ -62,18 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 5. Фильтрация и сортировка карточек
     function filterAndSortContacts(filter = "all", sortOption = "default") {
         let filteredContacts = contactsData;
 
-        // Фильтрация
         if (filter !== "all") {
             filteredContacts = contactsData.filter(
                 (contact) => contact.category === filter
             );
         }
 
-        // Сортировка
         if (sortOption === "surname") {
             filteredContacts.sort((a, b) =>
                 a.name.split(" ")[1].localeCompare(b.name.split(" ")[1])
@@ -87,10 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
         displayContacts(filteredContacts);
     }
 
-    // Изначальное отображение всех контактов
     displayContacts(contactsData);
 
-    // Обработчики фильтрации
     const filterButtons = document.querySelectorAll(".filter-btn");
     filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -99,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Обработчики сортировки
     const timeSelector = document.getElementById("timeSelector");
     timeSelector.addEventListener("change", () => {
         const sortOption = timeSelector.value;
